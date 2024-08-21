@@ -1,8 +1,8 @@
 class Tcreds < Formula
     desc "A tool to manage Terraform credentials"
-    homepage "https://github.com/yourusername/tcreds"
-    url "https://github.com/yourusername/tcreds/releases/download/v1.0.0/tcreds"
-    sha256 "YOUR_BINARY_SHA256"
+    homepage "https://github.com/matusvid/tcreds"
+    url "https://github.com/matusvid/tcreds/archive/refs/tags/alpha-1.0.0.tar.gz"
+    sha256 "f792a7941a1fb50abc5cfdc058ee68c23d585696f7ebc581799b62242a3696a8"
   
     def install
       bin.install "tcreds"
