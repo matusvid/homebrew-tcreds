@@ -1,8 +1,14 @@
 class Tcreds < Formula
     desc "A tool to manage Terraform credentials"
     homepage "https://github.com/matusvid/tcreds"
-    url "https://github.com/matusvid/tcreds/archive/refs/tags/alpha-1.0.0.tar.gz"
-    sha256 "f792a7941a1fb50abc5cfdc058ee68c23d585696f7ebc581799b62242a3696a8"
+    
+    if OS.mac?
+      url "https://github.com/matusvid/tcreds/releases/download/alpha-1.0.1/tcreds-darwin-arm64"
+      sha256 "f496700905e1556cd15c7fc1054cf287472b573ad5f64f0a2521b9eb2e0848aa"
+    elsif OS.linux?
+      url "https://github.com/matusvid/tcreds/releases/download/alpha-1.0.1/tcreds-linux-amd64"
+      sha256 "2cd6c6061faf65eff906aa335e67123c1c87055b74f431542051f59d728906b5"
+    end
   
     def install
       bin.install "tcreds"
