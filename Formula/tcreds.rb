@@ -11,7 +11,8 @@ class Tcreds < Formula
     end
   
     def install
-      bin.install "tcreds"
+        bin.install "tcreds-darwin-amd64" => "tcreds" if OS.mac?
+        bin.install "tcreds-linux-amd64" => "tcreds" if OS.linux?
     end
   
     def caveats
