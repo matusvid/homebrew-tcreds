@@ -3,11 +3,11 @@ class Tcreds < Formula
     homepage "https://github.com/matusvid/tcreds"
     
     if OS.mac?
-      url "https://github.com/matusvid/tcreds/releases/download/alpha-1.0.2/tcreds-darwin-arm64"
-      sha256 "f496700905e1556cd15c7fc1054cf287472b573ad5f64f0a2521b9eb2e0848aa"
+      url "https://github.com/matusvid/tcreds/releases/download/alpha-1.0.3/tcreds-darwin-arm64"
+      sha256 "ff2d2643fb41b42da0024f209fcbebfe030a1e35082d2dc68195b32fcb0ce71d"
     elsif OS.linux?
-      url "https://github.com/matusvid/tcreds/releases/download/alpha-1.0.2/tcreds-linux-amd64"
-      sha256 "2cd6c6061faf65eff906aa335e67123c1c87055b74f431542051f59d728906b5"
+      url "https://github.com/matusvid/tcreds/releases/download/alpha-1.0.3/tcreds-linux-amd64"
+      sha256 "feb090d11a84e3b47f15f5668f48a086134797cf57780c4d9fcf060bade51561"
     end
   
     def install
